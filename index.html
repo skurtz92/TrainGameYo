@@ -42,7 +42,27 @@
     							</tr>
     						</thead>
     						<tbody>
-
+                  <tr>
+                  <td>Austin Train</td>
+                  <td>DFW</td>
+                  <td>45</td>
+                  <td>1 hour</td>
+                  <td>30 min</td>
+                  </tr>
+                      <tr>
+                  <td>DFW Train</td>
+                  <td>Mississippi</td>
+                  <td>60</td>
+                  <td>3 hour</td>
+                  <td>45 min</td>
+                  </tr>
+                      <tr>
+                  <td>New York Train</td>
+                  <td>Chicago</td>
+                  <td>75 min</td>
+                  <td>1 hour</td>
+                  <td>60 min</td>
+                  </tr>
     						</tbody>
     					</table>
     				</div>
@@ -51,32 +71,32 @@
     			<!-- Add Employee  -->
     			<div class="panel panel-primary">
     				<div class="panel-heading" style="background-color: #9176d9; color: white">
-    					<h3 class="panel-title">Add Train</h3>
+    					<h3 class="panel-title" id="addTrainHead">Add Train</h3>
     				</div>
     				<div class="panel-body">
       				<!-- Entry Form -->
       				<form>
       					<div class="form-group">
-      						<label for="trainNameInput">Train Name</label>
-      						<input type="text" class="form-control" id="trainNameInput">
+      						<label for="trainNameInput" id="trainName">Train Name</label>
+      						<input type="text" class="form-control">
       					</div>
 
       					<div class="form-group">
-      						<label for="destinationInput">Destination</label>
-      						<input type="text" class="form-control" id="destinationInput">
+      						<label for="destinationInput" id="trainDestination">Destination</label>
+      						<input type="text" class="form-control">
       					</div>
 
       					<div class="form-group">
-      					  <label for="firstTrainTimeInput">First Train Time</label>
-      						<input type="time" name="time" class="form-control" id="firstTrainTimeInput"></input>
+      					  <label for="firstTrainTimeInput" id="firstTime">First Train Time</label>
+      						<input type="time" name="time" class="form-control"></input>
       					</div>
 
       					<div class="form-group">
-      						<label for="frequencyInput">Frequency (mins)</label>
-      						<input type="text" class="form-control" id="frequencyInput">
+      						<label for="frequencyInput" id="frequency">Frequency (mins)</label>
+      						<input type="text" class="form-control">
       					</div>
 
-      					<button type="submit" class="btn btn-primary" style="background-color: #9176d9; color: white" id="addTrainBtn">Submit</button>
+      					<button type="submit" style="background-color: #9176d9; color: white" id="submit">Submit</button>
       				</form>
 
     				</div>
@@ -91,7 +111,12 @@
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"   integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="   crossorigin="anonymous"></script>
+     <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
 
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script> 
+<script>
+    
+
+  </script>
   </body>
 </html>
